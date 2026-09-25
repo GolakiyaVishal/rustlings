@@ -40,5 +40,8 @@ fn main() {
     //                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     println!("Jobs done: {}", jobs_done);
 
-    assert_eq!(jobs_done, 10, "All 10 threads must update the *shared* status");
+    assert_eq!(
+        jobs_done, 10,
+        "All 10 threads must update the *shared* status"
+    );
 }
